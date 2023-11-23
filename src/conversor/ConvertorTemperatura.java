@@ -25,8 +25,7 @@ public class ConvertorTemperatura {
 	public static void main(String[] args) {
 		System.out.println("Digite a temperatura: ");
 		Scanner ler = new Scanner(System.in);
-		String temp = ler.nextLine();
-		double temperatura = Double.parseDouble(temp);
+		double temperatura = ler.nextDouble();
 		
 		System.out.println("Digite a unidade de origem [C] Celsius |[F] Fahrenheit: ");
 		ler = new Scanner(System.in);
