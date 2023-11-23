@@ -7,13 +7,11 @@ public class Calculadora {
 	public static void main(String[] args) {
 		System.out.println("Digite o primeiro número: ");
 		Scanner ler = new Scanner(System.in);
-		String num1 = ler.nextLine();
-		int number1 = Integer.parseInt(num1);
+		int num1 = ler.nextInt();
 		
 		System.out.println("Digite o segundo número: ");
 		ler = new Scanner(System.in);
-		String num2 = ler.nextLine();
-		int number2 = Integer.parseInt(num2);
+		int num2 = ler.nextInt();
 		
 		System.out.println("Digite a operação (+, -, *, /): ");
 		ler = new Scanner(System.in);
@@ -21,16 +19,16 @@ public class Calculadora {
 		
 		switch(opcao) {
 			case "+":
-				System.out.println("Soma: " + (number1+number2));
+				System.out.println("Soma: " + (num1+num2));
 				break;
 			case "-":
-				System.out.println("Subtração: " + (number1-number2));
+				System.out.println("Subtração: " + (num1-num2));
 				break;
 			case "*":
-				System.out.println("Multiplicação: " + (number1*number2));
+				System.out.println("Multiplicação: " + (num1*num2));
 				break;
 			case "/":
-				System.out.println("Divisão: " + (number1/number2));
+				System.out.println("Divisão: " + (num1/num2));
 				break;
 			default:
 				System.out.println("Operação incorreta!!");
