@@ -1,0 +1,82 @@
+1. O que é uma classe em Java e qual é a diferença entre uma classe e um objeto? Dê 5 exemplos mostrando-os em C++ e em Java.
+- Classe em Java:
+Uma classe em Java é uma estrutura que define o comportamento e as características de objetos. 
+Ela é a estrutura básica para criar objetos.
+
+-Diferença entre Classe e Objeto:
+Uma classe é uma estrutura geral que define atributos e comportamentos.
+Um objeto é uma instância específica dessa classe, com valores específicos para seus atributos.
+
+- Exemplo Java
+class Carro {
+    String modelo;
+    int ano;
+}
+
+- Exemplo C++
+class Carro {
+public:
+    std::string modelo;
+    int ano;
+};
+
+
+2. Como você declara uma variável em Java e quais são os tipos de dados primitivos mais comuns?
+Faça um paralelo entre isso e a mesma coisa na linguagem C++
+
+- Declaração de Variáveis em Java:
+int numero = 42;
+
+- Tipos de Dados Primitivos em Java:
+int, double, float, char, boolean, etc.
+
+- Paralelo com C++:
+int numero = 42;
+
+-Tipos de Dados Primitivos em C++:
+int, double, float, char, bool, etc.
+
+3. Explique o conceito de herança em Java e como você pode criar uma subclasse a partir de uma classe existente.
+Faça um paralelo com C++, apresentando 5 exemplos.
+
+- Herança em Java:
+Herança permite que uma classe (subclasse) herde atributos e métodos de outra classe (superclasse).
+
+// Exemplo Java
+class Animal {
+    void fazerBarulho() {
+        System.out.println("Barulho genérico de animal");
+    }
+}
+
+class Cachorro extends Animal {
+    void fazerBarulho() {
+        System.out.println("Latir");
+    }
+}
+
+// Exemplo C++
+class Animal {
+public:
+    void fazerBarulho() {
+        std::cout << "Barulho genérico de animal" << std::endl;
+    }
+};
+
+- Em C++:
+class Cachorro : public Animal {
+public:
+    void fazerBarulho() {
+        std::cout << "Latir" << std::endl;
+    }
+};
+
+4. Quando declaramos uma variável em Java, temos, na verdade, um ponteiro. Em C++ é diferente. Discorra sobre esse aspecto.
+
+-Java:
+Em Java, variáveis de objetos contêm referências a objetos na memória, mas não são ponteiros no sentido tradicional. 
+Em Java, a manipulação direta de ponteiros não é permitida por questões de segurança.
+
+-C++:
+Em C++, as variáveis de objetos podem ser ponteiros ou objetos reais, dependendo de como são declaradas. 
+C++ oferece mais controle sobre ponteiros, permitindo manipulação direta da memória.
